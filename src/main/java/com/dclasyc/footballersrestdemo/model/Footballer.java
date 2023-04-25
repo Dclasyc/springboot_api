@@ -1,4 +1,4 @@
-package com.dclasyc.footballersrestdemo.footballer;
+package com.dclasyc.footballersrestdemo.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;

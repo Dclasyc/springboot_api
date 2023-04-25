@@ -1,17 +1,11 @@
 package com.dclasyc.footballersrestdemo;
 
-import com.dclasyc.footballersrestdemo.footballer.Footballer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.Collections;
-import java.util.List;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableSwagger2
 public class FootballersRestDemoApplication {
 
 	public static void main(String[] args) {

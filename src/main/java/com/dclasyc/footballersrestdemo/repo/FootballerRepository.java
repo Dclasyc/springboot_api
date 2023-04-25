@@ -1,5 +1,6 @@
-package com.dclasyc.footballersrestdemo.footballer;
+package com.dclasyc.footballersrestdemo.repo;
 
+import com.dclasyc.footballersrestdemo.model.Footballer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

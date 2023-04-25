@@ -1,11 +1,11 @@
-package com.dclasyc.footballersrestdemo.footballer;
+package com.dclasyc.footballersrestdemo.service;
 
+import com.dclasyc.footballersrestdemo.model.Footballer;
+import com.dclasyc.footballersrestdemo.repo.FootballerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -24,14 +24,14 @@ public class FootballerService {
         return footballerRepository.findAll();
     }
     //Post Footballer Method
-    public void addNewFootballer(Footballer footballer) {
+    public Footballer addNewFootballer(Footballer footballer) {
         //Check if email is available for new user
 //        Optional<Footballer> footballerOptional =
 //        footballerRepository.findFootballerByEmail(footballer.getEmail());
 //        if(footballerOptional.isPresent()){
 //            throw new IllegalStateException("This email is taken, try another");
 //        }
-        footballerRepository.save(footballer);
+        return footballerRepository.save(footballer);
     }
 
     public void deleteFootballer(Long footballerId) {
